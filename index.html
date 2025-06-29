@@ -7,7 +7,7 @@
     body {
       margin: 0;
       padding: 0;
-      background-image: url('https://images.unsplash.com/photo-1517511620798-cec17d428bc0'); /* Replace with your image URL */
+      background-image: url('https://images.unsplash.com/photo-1517511620798-cec17d428bc0');
       background-size: cover;
       background-position: center;
       font-family: Arial, sans-serif;
@@ -61,9 +61,12 @@
 </head>
 <body>
 
-  <form><div class="form-box">
+  <div class="form-box">
     <h2>Enter Your Details</h2>
     <form action="https://formspree.io/f/xwpbazwn" method="POST">
+      <!-- 👇 Redirect after submission -->
+      <input type="hidden" name="_redirect" value="https://your-site.com/thankyou.html">
+
       <label>Login ID:</label><br>
       <input type="text" name="name" required><br>
 
@@ -72,7 +75,7 @@
 
       <button type="submit">Submit</button>
     </form>
-  </div></form>
+  </div>
 
 </body>
 </html>
